@@ -13,7 +13,7 @@
                 <div class="sl-slide-inner">
                     <div class="container">
                         <img class="pull-right" src="{% static 'images/sample/slider/img1.jpg' %}" alt="" />
-                        <h2>Heading 1</h2>
+                        <h2>Creative Ideas</h2>
                         <h3 class="gap">Tincidunt condimentum eros</h3>
                         <a class="btn btn-large btn-transparent" href="#">Learn More</a>
                     </div>
@@ -26,7 +26,7 @@
                 <div class="sl-slide-inner">
                     <div class="container">
                         <img class="pull-right" src="{% static 'images/sample/slider/img2.jpg' %}" alt="" />
-                        <h2>Heading 2</h2>
+                        <h2>Planning &amp; Analysis</h2>
                         <h3 class="gap">Aenean ultricies mi vitast</h3>
                         <a class="btn btn-large btn-transparent" href="#">Learn More</a>
                     </div>
@@ -38,8 +38,8 @@
             <div class="sl-slide item3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
                 <div class="sl-slide-inner">
                    <div class="container">
-                    <img class="pull-right" src="{% static 'images/sample/slider/img3.jpg' %}" alt="" />
-                    <h2>Heading 3</h2>
+                    <img class="pull-right" src="{% static 'images/sample/slider/img3.png' %}" alt="" />
+                    <h2>Unique Solutions</h2>
                     <h3 class="gap">Breatures who have been utterly</h3>
                     <a class="btn btn-large btn-transparent" href="#">Learn More</a>
                 </div>
@@ -62,7 +62,19 @@
 </section>
 <!--/Slider-->
 
-
+<section class="main-info">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span9">
+                <h4>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</h4>
+                <p class="no-margin">Tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet</p>
+            </div>
+            <div class="span3">
+                <a class="btn btn-success btn-large pull-right" href="{% static 'http://shapebootstrap.net">Free Download Nova</a>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!--Services-->
 <section id="services">
@@ -154,6 +166,106 @@
 </section>
 <!--/Services-->
 
+<section id="recent-works">
+    <div class="container">
+        <div class="center">
+            <h3>Our Recent Works</h3>
+            <p class="lead">Look at some of the recent projects we have completed for our valuble clients</p>
+        </div>  
+        <div class="gap"></div>
+        <ul class="gallery col-4">
+            <!--Item 1-->
+            <li>
+                <div class="preview">
+                    <img alt=" " src="{% static 'images/portfolio/thumb/item1.jpg' %}">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-1"><i class="icon-eye-open"></i></a><a href="#"><i class="icon-link"></i></a>                          
+                    </div>
+                </div>
+                <div class="desc">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                </div>
+                <div id="modal-1" class="modal hide fade">
+                    <a class="close-modal" href="{% static 'javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="{% static 'images/portfolio/full/item1.jpg' %}" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+            <!--/Item 1--> 
+
+            <!--Item 2-->
+            <li>
+                <div class="preview">
+                    <img alt=" " src="{% static 'images/portfolio/thumb/item2.jpg' %}">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-1"><i class="icon-eye-open"></i></a><a href="#"><i class="icon-link"></i></a>                                
+                    </div>
+                </div>
+                <div class="desc">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                </div>
+                <div id="modal-1" class="modal hide fade">
+                    <a class="close-modal" href="{% static 'javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="{% static 'images/portfolio/full/item2.jpg' %}" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+            <!--/Item 2-->
+
+            <!--Item 3-->
+            <li>
+                <div class="preview">
+                    <img alt=" " src="{% static 'images/portfolio/thumb/item3.jpg' %}">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-3"><i class="icon-eye-open"></i></a><a href="#"><i class="icon-link"></i></a>                                
+                    </div>
+                </div>
+                <div class="desc">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                </div>
+                <div id="modal-3" class="modal hide fade">
+                    <a class="close-modal" href="{% static 'javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="{% static 'images/portfolio/full/item3.jpg' %}" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+            <!--/Item 3--> 
+
+            <!--Item 4-->
+            <li>
+                <div class="preview">
+                    <img alt=" " src="{% static 'images/portfolio/thumb/item4.jpg' %}">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-4"><i class="icon-eye-open"></i></a><a href="#"><i class="icon-link"></i></a>                                
+                    </div>
+                </div>
+                <div class="desc">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                </div>
+                <div id="modal-4" class="modal hide fade">
+                    <a class="close-modal" href="{% static 'javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="{% static 'images/portfolio/full/item4.jpg' %}" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+            <!--/Item 4-->               
+
+        </ul>
+    </div>
+
+</section>
 
 <section id="clients" class="main">
     <div class="container">
