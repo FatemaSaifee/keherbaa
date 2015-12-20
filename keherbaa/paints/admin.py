@@ -1,12 +1,22 @@
 from django.contrib import admin
-from paints.models import Product, ProductType, ProductTypeBlock
+from nested_admin import NestedAdmin, NestedStackedInline
+from paints.models import Product, ProductType, ProductTypeBlock, ProductTypeBlockPoint
 # Register your models here.
 
-class ProductTypeInline(admin.StackedInline):
+class ProductTypeBlockPointInlines(NestedStackedInline):
+	model = ProductTypeBlockPoint
+	extra =2
+
+class ProductTypeBlockInline(NestedStackedInline):
+	model = ProductTypeBlock
+	inlines = [ProductTypeBlockPointInlines,]
+
+class ProductTypeInline(NestedStackedInline):
 	model = ProductType
 	extra = 1
+	inlines = [ProductTypeBlockInline,]
 
-class ProductAdmin(admin.ModelAdmin):
-	inlines = [ProductTypeInline]
+class ProductAdmin(NestedAdmin):
+	inlines = [ProductTypeInline,]
 
 admin.site.register(Product, ProductAdmin)

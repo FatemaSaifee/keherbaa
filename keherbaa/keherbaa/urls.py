@@ -36,6 +36,7 @@ urlpatterns = [
     {'document_root': settings.STATIC_ROOT}),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('paints.urls',namespace = "paints")),
+    url(r'^nested_admin/', include('nested_admin.urls')),
     # url(r'^tribune/', include('djangotribune.urls')),
 
 
